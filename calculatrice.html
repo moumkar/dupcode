@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUP</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 70px;
+  background: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+nav .navbar{
+  height: 100%;
+  max-width: 1250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  /* background: red; */
+  padding: 0px 100px;/* header l west */
+}
+nav .navbar .links{
+  display: flex;
+}
+nav .navbar .links li{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 14px;
+}
+nav .navbar .links li a{
+  height: 100%;
+  text-decoration: none;
+  white-space: nowrap;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}/*color navvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+.navbar .nav-links .sidebar-logo{
+  display: none;
+}
+.navbar .bx-menu{
+  display: none;
+}
+/*@media (max-width:920px) {
+}
+@media (max-width:800px){
+}*/
+/*div calculer*/
+.calculer{
+  font-family: Inter;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 44px;
+    letter-spacing: -0.24px;
+    width: 45%;
+    margin: 90px auto;
+    text-align: center;
+}
+/*siv plateformes*/
+.plateformes{
+  font-size: 20px;
+  text-align: center;
+    letter-spacing: -0.2px;
+}
+h3{
+  font-family: InterSemibold;
+    font-weight: 400;
+    display: block;
+   margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/* class quelles*/
+.quelles{
+    width: 75%;
+    margin: 48px auto;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 100%;
+}
+/*class pmateforme 1*/
+.platforme1{
+  width: 216px;
+    height: 133px;
+    margin: 0.5em 0px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: var(--VeryLightGrey);
+    border-radius: 24px;
+    border: 3px solid white;
+    cursor: pointer;
+}
+/* class textappel*/
+.textappel{
+  margin-top: 16px;
+    max-width: 75%;
+}
+.primatyButtonText{
+  font-family: InterSemibold;
+    font-size: 16px;
+    font-weight: 400;
+}
+/***/
+.plateforme1{
+  width: 216px;
+    height: 133px;
+    margin: 0.5em 0px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: var(--VeryLightGrey);
+    border-radius: 10px;
+    border: 3px solid white;
+    cursor: pointer;
+}
+/*****/
+.plateformes{
+  width: 75%;
+    margin: 48px auto;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-evenly;
+}
+    </style>
+</head>
+<body>
+ 
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><img src="https://mail.google.com/mail/u/0?ui=2&ik=c0715b57cf&attid=0.1&permmsgid=msg-f:1757209576634572998&th=1862dcccc337e0c6&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ-f9XSpajlkTnqTwXGMS2gwWfpQjjvXS1eUCmtv80CQaS9X0yu63B22QxXNHXeMV8-RAhsLoySJE6BuQTL6UFlQPcMEAl-EQxLQ5l0owQh0w381Bb2shCbTdYc&disp=emb&realattid=ii_ldurgjh90" style="height: 50px; width: 50px;"><!--<a>Educalist</a>--></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name">CodingLab</span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Calculatrice</a></li>
+              <li><a href="#">À propos</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class='bx bx-search'></i>
+            <!--<div class="input-box">
+              <input type="text" placeholder="Search...">
+            </div>-->
+          </div>
+        </div>
+      </nav>
+      <div class="calculer">Calculez le coût du développement de votre application*</div>
+      <div>
+      <h3 class="plateformes">Pour quelles plateformes souhaitez-vous développer le produit ?</h3>
+      <div class="quelles">
+        <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/AppType/Apple.svg" alt="logo" class="1">
+        <div class="textappel primaryButtonText" style="color: var(--DarkGrey);">Appel</div>
+        </div>
+
+        <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/AppType/Android.svg" alt="logo" class="1">
+          <div class="textAndroid primaryButtonText" style="color: var(--DarkGrey);">Android</div>
+          </div>
+
+          <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/AppType/Web.svg" alt="logo" class="1">
+            <div class="textweb primaryButtonText" style="color: var(--DarkGrey);">Web</div>
+            </div>
+      </div>
+      </div>
+      <!--------->
+      <div>
+        <h3 class="plateformes">Que voulez-vous obtenir ? ?</h3>
+        <div class="quelles">
+          <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/ProjectType/newProject.svg" alt="logo" class="1">
+          <div class="textappel primaryButtonText" style="color: var(--DarkGrey);">An application from scratch</div>
+          </div>
+  
+          <div class="plateforme1" style="border-color: white;"><img src="https://kmoz.dev/Calculation/ProjectType/update.svg" alt="logo" class="1">
+            <div class="textAndroid primaryButtonText" style="color: var(--DarkGrey);">Update</div>
+            </div>
+  
+            <div class="plateforme1" style="border-color: white;"><img src="https://kmoz.dev/Calculation/ProjectType/revision.svg" alt="logo" class="1">
+              <div class="textweb primaryButtonText" style="color: var(--DarkGrey);">Revision of the project</div>
+              </div>
+        </div>
+        </div>
+      <!-------------->
+      <div>
+        <h3 class="plateformes">Combien d'écrans uniques y aura-t-il dans l'application ?</h3>
+        <div class="quelles">
+          <div class="plateforme1" style="border-color: white;"><img src="https://kmoz.dev/Calculation/UniqueScreen/less10.svg" alt="logo" class="1">
+          <div class="textappel primaryButtonText" style="color: var(--DarkGrey);">less than 10</div>
+          </div>
+  
+          <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/UniqueScreen/more10.svg" alt="logo" class="1">
+            <div class="textAndroid primaryButtonText" style="color: var(--DarkGrey);">from 10 to 25</div>
+            </div>
+  
+            <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/UniqueScreen/more25.svg" alt="logo" class="1">
+              <div class="textweb primaryButtonText" style="color: var(--DarkGrey);">more 25</div>
+              </div>
+        </div>
+        </div>
+        <!------------------>
+        <div>
+          <h3 class="plateformes">Quel est le degré de développement de l'interface de l'application ?</h3>
+          <div class="quelles">
+            <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/DegreeDevelopment/simple.svg" alt="logo" class="1">
+            <div class="textappel primaryButtonText" style="color: var(--DarkGrey);">Simple</div>
+            </div>
+    
+            <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/DegreeDevelopment/unique.svg" alt="logo" class="1">
+              <div class="textAndroid primaryButtonText" style="color: var(--DarkGrey);">Unique</div>
+              </div>
+    
+              <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/DegreeDevelopment/animation.svg" alt="logo" class="1">
+                <div class="textweb primaryButtonText" style="color: var(--DarkGrey);">Unique with animation</div>
+                </div>
+</div>
+</div>
+          <!------------->
+
+<div>
+<h3 class="plateformes">Quelles fonctionnalités souhaitez-vous inclure dans l'application ?
+</h3>
+<div class="quelles">
+<div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/FunctionsData/search.svg" alt="logo" class="1">
+<div class="textappel primaryButtonText" style="color: var(--DarkGrey);">Search</div>
+  </div>
+      
+<div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/FunctionsData/map.svg" alt="logo" class="1">
+<div class="textAndroid primaryButtonText" style="color: var(--DarkGrey);">Map</div>
+</div>
+      
+<div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/FunctionsData/catalog.svg" alt="logo" class="1">
+<div class="textweb primaryButtonText" style="color: var(--DarkGrey);">Catalog</div>
+</div>
+<!--1-->
+
+<div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/FunctionsData/calendar.svg" alt="logo" class="1">
+<div class="textweb primaryButtonText" style="color: var(--DarkGrey);">Calendar</div>
+</div>
+
+<div class="plateforme1" style="border-color: white;"><img src="https://kmoz.dev/Calculation/FunctionsData/card.svg" alt="logo" class="1">
+<div class="textweb primaryButtonText" style="color: var(--DarkGrey);">Payments</div>
+</div>
+
+<div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/FunctionsData/booking.svg" alt="logo" class="1">
+<div class="textweb primaryButtonText" style="color: var(--DarkGrey);">Booking</div>
+</div>
+<!---------->
+
+<div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/FunctionsData/login.svg" alt="logo" class="1">
+<div class="textweb primaryButtonText" style="color: var(--DarkGrey);">Registration and authorization</div>
+</div>
+
+<div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/FunctionsData/chat.svg" alt="logo" class="1">
+<div class="textweb primaryButtonText" style="color: var(--DarkGrey);">Chats</div>
+</div>
+
+<div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/DegreeDevelopment/unique.svg" alt="logo" class="1">
+<div class="textweb primaryButtonText" style="color: var(--DarkGrey);">Favourites</div>
+</div>
+      <!-------->
+      
+<div class="plateforme1" style="border-color: white;"><img src="https://kmoz.dev/Calculation/FunctionsData/rating.svg" alt="logo" class="1">
+<div class="textweb primaryButtonText" style="color: var(--DarkGrey);">Reviews and ratings</div>
+</div>
+
+<div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/FunctionsData/notification.svg" alt="logo" class="1">
+<div class="textweb primaryButtonText" style="color: var(--DarkGrey);">Notifications</div>
+</div>
+
+<div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/FunctionsData/files.svg" alt="logo" class="1">
+<div class="textweb primaryButtonText" style="color: var(--DarkGrey);">Working with files</div>
+</div>
+            <!--------->
+           
+
+<div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/FunctionsData/AR.svg" alt="logo" class="1">
+<div class="textweb primaryButtonText" style="color: var(--DarkGrey);">AR</div>
+  </div>
+
+  <div class="plateforme1" style="border-color: white;"><img src="https://kmoz.dev/Calculation/FunctionsData/dataCollection.svg" alt="logo" class="1">
+  <div class="textweb primaryButtonText" style="color: var(--DarkGrey);">Collecting data from sensors</div>
+  </div>
+
+ <div class="plateforme1" style="border-color: white;"><img src="https://kmoz.dev/Calculation/FunctionsData/userTesting.svg" alt="logo" class="1">
+ <div class="textweb primaryButtonText" style="color: var(--DarkGrey);">User testing</div>
+  </div>
+                  <!------>
+                  
+    <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/FunctionsData/support.svg" alt="logo" class="1">
+    <div class="textweb primaryButtonText" style="color: var(--DarkGrey);">Technical support</div>
+     </div>
+                    
+     <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/FunctionsData/QR.svg" alt="logo" class="1">
+      <div class="textweb primaryButtonText" style="color: var(--DarkGrey);">QR</div>
+      </div>
+
+      <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/FunctionsData/3D.svg" alt="logo" class="1">
+      <div class="textweb primaryButtonText" style="color: var(--DarkGrey);">3D</div>
+      </div>
+
+            </div>
+          </div>
+
+          <div>
+            <h3 class="plateformes">Avec quelles services tiers devez-vous interagir ?</h3>
+            <div class="quelles">
+              <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/ServicesData/SMS.svg" alt="logo" class="1">
+              <div class="textappel primaryButtonText" style="color: var(--DarkGrey);">SMS Mailing</div>
+              </div>
+      
+              <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/ServicesData/API.svg" alt="logo" class="1">
+                <div class="textAndroid primaryButtonText" style="color: var(--DarkGrey);">API</div>
+                </div>
+      
+                <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/ServicesData/CRM.svg" alt="logo" class="1">
+                  <div class="textweb primaryButtonText" style="color: var(--DarkGrey);">CRM</div>
+                  </div>
+
+                  <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/ServicesData/CMS.svg" alt="logo" class="1">
+                    <div class="textAndroid primaryButtonText" style="color: var(--DarkGrey);">CMS</div>
+                    </div>
+
+                    <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/ServicesData/billing.svg" alt="logo" class="1">
+                      <div class="textAndroid primaryButtonText" style="color: var(--DarkGrey);">Billing systems</div>
+                      </div>
+
+                      <div class="plateforme1" style="border-color: white;"><img src="	https://kmoz.dev/Calculation/ServicesData/cashMachine.svg" alt="logo" class="1">
+                        <div class="textAndroid primaryButtonText" style="color: var(--DarkGrey);">Cash register equipment</div>
+                        </div>
+            </div>
+            </div>
+           
+</body>
+</html>
